@@ -1,0 +1,72 @@
+.img-container {
+    text-align: center;
+}
+
+.img-container img {
+    max-width: 100%;
+    display: inline-block;
+    margin: 0 auto;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1536px) {
+    .img-container img {
+        max-width: 768px;
+    }
+}
+
+@media screen and (min-width: 1536px) {
+    .img-container img {
+        max-width: 50%;
+    }
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+}
+
+.form-container {
+    width: 80%; /* Adjust the width as needed */
+    max-width: 400px; /* Maximum width for larger screens */
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+.form-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 10px; /* Add margin between rows */
+}
+
+.form-row label,
+.form-row input {
+    width: calc(50% - 5px); /* Make each input take up 50% width with a small gap between them */
+    margin-bottom: 10px; /* Add margin between inputs */
+    padding: 10px; /* Add padding for better appearance */
+    box-sizing: border-box; /* Include padding and border in input width */
+}
+
+.form-container button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.form-container button:hover {
+    background-color: #0056b3;
+}
+
+.scatterplot-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 10px auto;
+}
